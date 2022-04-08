@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		C9B76DA927FF8B8200BBDE71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B76DA827FF8B8200BBDE71 /* AppDelegate.swift */; };
 		C9B76DAB27FF8B8200BBDE71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B76DAA27FF8B8200BBDE71 /* SceneDelegate.swift */; };
-		C9B76DAD27FF8B8200BBDE71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B76DAC27FF8B8200BBDE71 /* ViewController.swift */; };
 		C9B76DB027FF8B8200BBDE71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B76DAE27FF8B8200BBDE71 /* Main.storyboard */; };
 		C9B76DB227FF8B8400BBDE71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9B76DB127FF8B8400BBDE71 /* Assets.xcassets */; };
 		C9B76DB527FF8B8400BBDE71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B76DB327FF8B8400BBDE71 /* LaunchScreen.storyboard */; };
+		C9B76DC327FF8E8C00BBDE71 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B76DC227FF8E8C00BBDE71 /* Planet.swift */; };
+		C9D23FDE27FF96AC0097F386 /* PlanetListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D23FDD27FF96AC0097F386 /* PlanetListTableViewController.swift */; };
+		C9D23FE027FF9DFF0097F386 /* PlanetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D23FDF27FF9DFF0097F386 /* PlanetDetailViewController.swift */; };
+		C9E383D927FF91630096BBBF /* PlanetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E383D827FF91630096BBBF /* PlanetController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C9B76DA527FF8B8200BBDE71 /* Solor_System.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Solor_System.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B76DA827FF8B8200BBDE71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9B76DAA27FF8B8200BBDE71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C9B76DAC27FF8B8200BBDE71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C9B76DAF27FF8B8200BBDE71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9B76DB127FF8B8400BBDE71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9B76DB427FF8B8400BBDE71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9B76DB627FF8B8400BBDE71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9B76DC227FF8E8C00BBDE71 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		C9D23FDD27FF96AC0097F386 /* PlanetListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetListTableViewController.swift; sourceTree = "<group>"; };
+		C9D23FDF27FF9DFF0097F386 /* PlanetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailViewController.swift; sourceTree = "<group>"; };
+		C9E383D827FF91630096BBBF /* PlanetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,66 @@
 		C9B76DA727FF8B8200BBDE71 /* Solor_System */ = {
 			isa = PBXGroup;
 			children = (
-				C9B76DA827FF8B8200BBDE71 /* AppDelegate.swift */,
-				C9B76DAA27FF8B8200BBDE71 /* SceneDelegate.swift */,
-				C9B76DAC27FF8B8200BBDE71 /* ViewController.swift */,
-				C9B76DAE27FF8B8200BBDE71 /* Main.storyboard */,
-				C9B76DB127FF8B8400BBDE71 /* Assets.xcassets */,
-				C9B76DB327FF8B8400BBDE71 /* LaunchScreen.storyboard */,
-				C9B76DB627FF8B8400BBDE71 /* Info.plist */,
+				C9B76DC127FF8D2900BBDE71 /* Models */,
+				C9B76DBE27FF8CE000BBDE71 /* Controllers */,
+				C9B76DBD27FF8CCE00BBDE71 /* Views */,
+				C9B76DBC27FF8C8E00BBDE71 /* Resources */,
 			);
 			path = Solor_System;
+			sourceTree = "<group>";
+		};
+		C9B76DBC27FF8C8E00BBDE71 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C9B76DA827FF8B8200BBDE71 /* AppDelegate.swift */,
+				C9B76DAA27FF8B8200BBDE71 /* SceneDelegate.swift */,
+				C9B76DB127FF8B8400BBDE71 /* Assets.xcassets */,
+				C9B76DB627FF8B8400BBDE71 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C9B76DBD27FF8CCE00BBDE71 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C9B76DAE27FF8B8200BBDE71 /* Main.storyboard */,
+				C9B76DB327FF8B8400BBDE71 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C9B76DBE27FF8CE000BBDE71 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9B76DC027FF8CF100BBDE71 /* ModelControllers */,
+				C9B76DBF27FF8CE700BBDE71 /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C9B76DBF27FF8CE700BBDE71 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9D23FDD27FF96AC0097F386 /* PlanetListTableViewController.swift */,
+				C9D23FDF27FF9DFF0097F386 /* PlanetDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C9B76DC027FF8CF100BBDE71 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9E383D827FF91630096BBBF /* PlanetController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		C9B76DC127FF8D2900BBDE71 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C9B76DC227FF8E8C00BBDE71 /* Planet.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +195,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9B76DAD27FF8B8200BBDE71 /* ViewController.swift in Sources */,
+				C9B76DC327FF8E8C00BBDE71 /* Planet.swift in Sources */,
+				C9E383D927FF91630096BBBF /* PlanetController.swift in Sources */,
+				C9D23FDE27FF96AC0097F386 /* PlanetListTableViewController.swift in Sources */,
 				C9B76DA927FF8B8200BBDE71 /* AppDelegate.swift in Sources */,
+				C9D23FE027FF9DFF0097F386 /* PlanetDetailViewController.swift in Sources */,
 				C9B76DAB27FF8B8200BBDE71 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +348,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Solor_System/Info.plist;
+				INFOPLIST_FILE = Solor_System/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -315,7 +375,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Solor_System/Info.plist;
+				INFOPLIST_FILE = Solor_System/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
